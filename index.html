@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>宇洋网站02</title>
+    <style>
+        .video-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-<!--加载图片-->
-<div style="text-align: center;">
-    <img src="image/microsoft.png" alt="图片加载失败，请刷新页面">
-</div>
 <body>
-<div style="text-align: center; display: flex; justify-content: center; align-items: center;">
-    <video width="1280" height="720" controls>
-        <source src="vedio/《熊出没之探险日记》主题曲_洪辰【勇往直前】不曾听过的完整版.mp4" type="video/mp4">
-        <source src="vedio/《熊出没之探险日记》主题曲_洪辰【勇往直前】不曾听过的完整版.mp4" type="video/MP4">
-        您的浏览器不支持 HTML5 video 标签。
-    </video>
-</div>
-
-</video>
+    <!--加载图片-->
+    <div style="text-align: center;">
+        <img src="image/microsoft.png" alt="图片加载失败，请刷新页面" onclick="location.reload()">
+    </div>
+    <div class="video-container">
+        <video controls preload="auto">
+            <source src="vedio/《熊出没之探险日记》主题曲_洪辰【勇往直前】不曾听过的完整版.mp4" type="video/mp4">
+            <source src="vedio/《熊出没之探险日记》主题曲_洪辰【勇往直前】不曾听过的完整版.mp4" type="video/MP4">
+            您的浏览器不支持 HTML5 video 标签。
+        </video>
+    </div>
 </body>
 </html>
